@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'bodoni_72book';
+    src: url('font/bodonisvtytwoitctt-book-01-webfont.woff2') format('woff2'),
+         url('font/bodonisvtytwoitctt-book-01-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  top: 0rem;
+  display: inline-block;
+  color: #45f0df /* #8789c0;*/;
+  
+  font-size: 55px;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+body {
+  background: #111d4a;
+  font-family: 'bodoni_72book';
+  margin: Opx;
+  padding: Opx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  margin: 12 auto;
+  border: 2px black;
+  box-shadow: #45f0df 10px 10px 60px;
+  border-radius: 10px;
+  display: grid;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+header{
+  font-family: 'bodoni_72book';
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 70px;
+  color: white;
+  box-shadow: 0 8px 6px -6px black;
+  box-sizing:border-box ;
+}
+nav h1{
+  font-size: 2em;
+}
+nav ul{
+  display: flex;
+}
+ul{
+  list-style: none;
+}
+li:nth-child(1){
+  padding-right: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
