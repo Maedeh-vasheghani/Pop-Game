@@ -1,0 +1,415 @@
+@font-face {
+  font-family: 'bodoni_72book';
+  src: url('font/bodonisvtytwoitctt-book-01-webfont.woff2') format('woff2'),
+       url('font/bodonisvtytwoitctt-book-01-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'bodoni_72bold';
+  src: url('font/bodonisvtytwoitctt-bold-03-webfont.woff2') format('woff2'),
+       url('font/bodonisvtytwoitctt-bold-03-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+    background: #111D4A;
+    font-family:  sans-serif;
+
+}
+header{
+  font-family: 'bodoni_72book';
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 70px;
+  color: white;
+  box-shadow: 0 8px 6px -6px black;
+}
+nav h1{
+  font-size: 2em;
+}
+
+main{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 10;
+  padding: 100px;
+  background: #111D4A;
+}
+
+footer{
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #45F0DF;
+}
+
+.margin400px {
+  margin-bottom: 500px;
+}
+
+nav ul{
+  display: flex;
+}
+ul{
+  list-style: none;
+}
+li:nth-child(1){
+  padding-right: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.content{
+  width: 50%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.perso{
+  font-family: 'bodoni_72book';
+  text-align: center;
+}
+.perso img{
+  padding-top: 20px
+}
+
+.quest{
+  color: #45F0DF;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+.yes{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.choi{
+    width: 280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.yes1, .yes2{
+  font-family: 'bodoni_72book';
+  padding: 11px;
+    border-radius: 20%;
+    background-color: #45F0DF;
+    width: 150px;
+    color: #111D4A;
+    transition-duration: 0.4s;
+}
+.yes1:hover, .yes2:hover{
+  background-color: #8789C0; 
+  color: #111D4A;
+}
+.container-card {
+    /*position: absolute;
+    height: 400px;
+    top: 1300px;
+    left: 450px;*/
+    width: 1000px;
+    display: flex;
+  }
+  
+  .card {
+    display: flex;
+    height: 400px;
+    width: 1000px;
+    background-color: #8789C0 ;
+    border-radius: 15px;
+    box-shadow: -1rem 0 3rem rgba(0, 0, 0, 0.25);;
+    transition: 0.5s ease-out;
+    position: relative;
+    left: 0px;
+  }
+
+.card .pixel {
+    
+    width : 100%;
+    height: 100%;
+    display: block;
+}
+.card .snake {
+    
+    width : 100%;
+    height: 100%;
+    display: block;
+}
+.card .caesar {
+    
+    width : 100%;
+    height: 100%;
+    display: block;
+}
+.card .puissance {
+    
+    width : 100%;
+    height: 100%;
+    display: block;
+}
+  .card:not(:first-child) {
+      margin-left: -50px;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    transition: 0.5s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.5s ease-out;
+  }
+  
+  .title {
+    color:#111D4A;
+    
+    font-family: 'bodoni_72book';
+    position: absolute;
+    left: 50px;
+    top: 15px;
+    position: absolute;
+
+
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+
+
+
+
+
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+ 
+  
+  .emptybar {
+    background-color: #111D4A;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100px;
+    left: 18px;
+    height: 5px;
+    width: 250px;
+    
+  }
+  
+  .jeux {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    border-radius: 5px;
+  }
+  
+  .stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+  }
+  
+  
+  
+  .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }
+
+span {
+  color:#111D4A;
+    
+    font-family: 'bodoni_72book';
+    display: flex;
+    position: absolute;
+    left: 10em;
+    top: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* 
+.quest{
+
+  position: absolute;
+  width: 300px;
+  height: 43px;
+  left: 759px;
+  top: 315px;
+  
+  font-family: Bodoni 72;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  
+  color: #45F0DF;
+  
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.joueur{
+  position: absolute;
+  width: 182px;
+  height: 254px;
+  left: 819px;
+  top: 450px;
+  
+  background: url(joueuur.png);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.yes1{
+    position: absolute;
+    top: 700px;
+    left: 900px;
+    background-color: #45F0DF;
+    border-radius : 15px;
+    color : #8789C0;
+    padding: 1.5rem;
+    text-align: center;
+    font-family: Bodoni 72;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin : 4px 2px;
+}
+.yes2{
+    position: absolute;
+    top: 700px;
+    left: 750px;
+    background-color: #45F0DF;
+    border-radius : 15px;
+    color : #8789C0;
+    padding: 1rem;
+    text-align: center;
+    font-family: Bodoni 72;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin : 4px 2px;
+
+
+}
+ */
+
+
+/* .joueur{
+    position: absolute;
+    width: 186px;
+    height: 254px;
+    left: 800px;
+    top: 450px;
+
+} 
+
+.quest{
+    position: absolute;
+    width: 300px;
+    height: 43px;
+    left: 730px;
+    top: 320px;
+
+    font-family: Bodoni 72;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #45F0DF;
+
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+} */
+
+
+
+/* .titre{
+    position: absolute;
+    width: 1000px;
+    height: 54px;
+    left: 540px;
+    top: 400px;
+
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 2em;
+    /* identical to box height */
+
+/* 
+    letter-spacing: 0.1em;
+    
+    font-variant: small-caps;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+
+    color: #000000;
+
+    /* transform: rotate(-90deg); */
+/* }
+
+
+
+.bloc{
+    position: absolute;
+    width: 550px;
+    height: 300px;
+    left: 350px;
+    top: 500px;
+    
+    font-family: Bodoni 72;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: right;
+    
+    color: #000000;
+} */ 
+
+/* .bloc:hover{
+    transform: translate(0, -5px);
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+
+} */

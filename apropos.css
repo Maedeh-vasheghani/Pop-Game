@@ -1,0 +1,638 @@
+@font-face {
+    font-family: 'bodoni_72book';
+    src: url('font/bodonisvtytwoitctt-book-01-webfont.woff2') format('woff2'),
+         url('font/bodonisvtytwoitctt-book-01-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  background: #111D4A;
+  font-family: 'bodoni_72book';
+  
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 70px;
+    color: white;
+    box-shadow: 0 8px 6px -6px black;
+  }
+  
+  nav ul{
+    display: flex;
+  }
+  ul{
+    list-style: none;
+  }
+  li:nth-child(1){
+    padding-right: 10px;
+  }
+  
+ header a{
+    text-decoration: none;
+    color: white;
+  }
+
+span a {
+    color:#111D4A;
+    text-decoration: none;
+}
+.apropos{
+    display: grid;
+    width: 100%;
+    height: 1000px;
+    grid-template-areas: "head head"
+                         "nav  main"
+                         "nav  foot";
+    grid-template-rows: 50px 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+  
+.apropos> header {
+  grid-area: head;
+    
+}
+  
+.apropos> .nav {
+  
+    grid-area: nav;
+ 
+}
+  
+.apropos> .main {
+    grid-area: main;
+    
+}
+  
+.apropos> .footer {
+ 
+    grid-area: foot;
+    
+}
+
+main{
+      padding-top: 7rem;
+}
+
+
+footer{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+h1 {
+    margin: 2rem;
+	font-size: 1.5rem;
+	color: #45F0DF;
+
+}
+h2{
+
+    font-size: 2.5rem;
+	color: #8789C0;
+    text-align: left;
+    line-height: 2em;
+}
+ 
+  
+main span {
+	font-size: 1.7rem;
+	color: #45F0DF;
+    text-align: left; 
+    line-height : 1.5em;
+ }
+ footer span {
+    font-size: 1.7rem;
+	color: #45F0DF;
+    text-align: left; 
+    line-height : 1.5em;
+ }
+ p {
+    color: #C2CAE8;
+    text-align: left;
+	font-size: 1.5rem;
+    line-height: 1.5em;
+    padding-right: 10px;
+	
+}
+
+
+
+
+
+
+
+
+.card-raphael{
+    width : 12rem;
+    height : 12rem;
+    position: absolute;
+    margin-left: 30rem;
+    overflow : hidden;
+    background-color : #C2CAE8;
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.card-raphael .main-content-raphael{
+    width: 12rem;
+    height: 12rem;
+    transition : 0.5s;
+    border-radius: 15px;
+    /* overflow : hidden */
+}
+.card-raphael .main-content-raphael img{
+    position : absolute;
+    width: 10rem;
+    height: 13rem;
+    left: 1rem;
+    top: 0rem;
+    
+    
+    
+}
+.card-raphael .overlay-content-raphael{
+    width : 100%;
+    height : 100%;
+    background-color: #45F0DF;
+    color: #000000;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    overflow : hidden;
+    position : absolute;
+    transition : 0.5s;
+    z-index : 1;
+    top: 0%;
+    left : 100%;
+    opacity : 0;
+    border-radius: 15px;
+}
+.card-raphael:hover .overlay-content-raphael, .card:hover .main-content-raphael{
+    /* left : 0; */
+    transform : translateX(-100%);
+    opacity : 1;
+}
+
+.card-raphael .overlay-content-raphael .span {
+    top : 0px;
+    font-family: 'bodoni_72book';
+    text-align: justify;
+    font-weight: bold;
+    display : flex;
+    letter-spacing : normal;
+    font-size : 1rem;
+    font-style : italic;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.card-Maedeh{
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    margin-left: 10rem;
+    overflow : hidden;
+    background-color : #C2CAE8;
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.card-Maedeh .main-content-Maedeh{
+    width: 12rem;
+    height: 12rem;
+    transition : 0.5s;
+    border-radius: 15px;
+    /* overflow : hidden */
+}
+.card-Maedeh .main-content-Maedeh img{
+    position : absolute;
+    width: 12rem;
+    height: 12rem;
+    left: 0.2rem;
+    top: 0rem;
+    
+    
+    
+}
+.card-Maedeh .overlay-content-Maedeh{
+    width : 100%;
+    height : 100%;
+    background-color: #45F0DF;
+    color: #000000;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    overflow : hidden;
+    position : absolute;
+    transition : 0.5s;
+    z-index : 1;
+    top: 0%;
+    left : 100%;
+    opacity : 0;
+    border-radius: 15px;
+}
+.card-Maedeh:hover .overlay-content-Maedeh, .card:hover .main-content-Maedeh{
+    /* left : 0; */
+    transform : translateX(-100%);
+    opacity : 1;
+}
+
+.card-Maedeh .overlay-content-Maedeh span {
+    top : 0px;
+    font-family: 'bodoni_72book';
+    text-align: justify;
+    font-weight: bold;
+    display : flex;
+    letter-spacing : normal;
+    font-size : 1rem;
+    font-style : italic;
+
+
+}
+
+/* .card-maedeh .overlay-content-maedeh p {
+    display : flex;
+    text-align : center;
+    font-family: Bodoni 72;
+    font-style: normal;
+    font-weight: normal;
+    font-size : 1rem;
+
+    letter-spacing : 1px;
+    line-height : 1.2rem;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-nathan{
+    width : 12rem;
+    height : 12rem;
+    position: absolute;
+    margin-left: 10rem;
+    margin-top: -21rem;
+    
+    overflow : hidden;
+    background-color : #C2CAE8;
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.card-nathan .main-content-nathan{
+    width: 12rem;
+    height: 12rem;
+    transition : 0.5s;
+    border-radius: 15px;
+    /* overflow : hidden */
+}
+.card-nathan .main-content-nathan img{
+    position : absolute;
+    width: 10rem;
+    height: 12rem;
+    left: 0.7rem;
+    top: 0.1rem;
+    
+    
+    
+}
+.card-nathan .overlay-content-nathan{
+    width : 100%;
+    height : 100%;
+    background-color: #45F0DF;
+    color: #000000;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    overflow : hidden;
+    position : absolute;
+    transition : 0.5s;
+    z-index : 1;
+    top: 0%;
+    left : 100%;
+    opacity : 0;
+    border-radius: 15px;
+}
+.card-nathan:hover .overlay-content-nathan, .card:hover .main-content-nathan{
+    /* left : 0; */
+    transform : translateX(-100%);
+    opacity : 1;
+}
+
+.card-nathan .overlay-content-nathan span {
+    top : 0px;
+    font-family: 'bodoni_72book';
+    text-align: justify;
+    font-weight: bold;
+    display : flex;
+    letter-spacing : normal;
+    font-size : 1rem;
+    font-style : italic;
+
+
+}
+
+/* .card-nathan .overlay-content-nathan p {
+    display : flex;
+    text-align : center;
+    font-family: Bodoni 72;
+    font-style: normal;
+    font-weight: normal;
+    font-size : 1rem;
+
+    letter-spacing : 1px;
+    line-height : 1.2rem;
+} */
+
+
+
+
+
+
+
+
+
+.card-burak{
+    width : 12rem;
+    height : 12rem;
+    position: absolute;
+    margin-top : -21rem;
+    margin-left:  30rem; 
+    overflow : hidden;
+    background-color : #C2CAE8;
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.card-burak .main-content-burak{
+    width: 12rem;
+    height: 12rem;
+    transition : 0.5s;
+    border-radius: 15px;
+    /* overflow : hidden */
+}
+.card-burak .main-content-burak img{
+    position : absolute;
+    width: 9rem;
+    height: 12rem;
+    left: 1.5rem;
+    top: 0rem;
+    
+    
+    
+}
+.card-burak .overlay-content-burak{
+    width : 100%;
+    height : 100%;
+    background-color: #45F0DF;
+    color: #000000;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    overflow : hidden;
+    position : absolute;
+    transition : 0.5s;
+    z-index : 1;
+    top: 0%;
+    left : 100%;
+    opacity : 0;
+    border-radius: 15px;
+}
+.card-burak:hover .overlay-content-burak, .card:hover .main-content-burak{
+    /* left : 0; */
+    transform : translateX(-100%);
+    opacity : 1;
+}
+
+.card-burak .overlay-content-burak span {
+    top : 0px;
+    font-family: 'bodoni_72book';
+    text-align: justify;
+    font-weight: bold;
+    display : flex;
+    letter-spacing : normal;
+    font-size : 1rem;
+    font-style : italic;
+
+
+}
+
+/* .card-burak .overlay-content-burak p {
+    display : flex;
+    text-align : center;
+    font-family: Bodoni 72;
+    font-style: normal;
+    font-weight: normal;
+    font-size : 1rem;
+
+    letter-spacing : 1px;
+    line-height : 1.2rem;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-yesmine{
+    width : 12rem;
+    height : 12rem;
+    position: absolute;
+    margin-top : 21rem;
+    margin-left:  30rem; 
+    overflow : hidden;
+    background-color : #C2CAE8;
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.card-yesmine .main-content-yesmine{
+    width: 12rem;
+    height: 12rem;
+    transition : 0.5s;
+    border-radius: 15px;
+    /* overflow : hidden */
+}
+.card-yesmine .main-content-yesmine img{
+    position : absolute;
+    width: 10rem;
+    height: 12rem;
+    left: 1.5rem;
+    top: 0rem;
+    
+    
+    
+}
+.card-yesmine .overlay-content-yesmine{
+    width : 100%;
+    height : 100%;
+    background-color: #45F0DF;
+    color: #000000;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    overflow : hidden;
+    position : absolute;
+    transition : 0.5s;
+    z-index : 1;
+    top: 0%;
+    left : 100%;
+    opacity : 0;
+    border-radius: 15px;
+}
+.card-yesmine:hover .overlay-content-yesmine, .card:hover .main-content-yesmine{
+    /* left : 0; */
+    transform : translateX(-100%);
+    opacity : 1;
+}
+
+.card-yesmine .overlay-content-yesmine span {
+    top : 0px;
+    font-family: 'bodoni_72book';
+    text-align: justify;
+    font-weight: bold;
+    display : flex;
+    letter-spacing : normal;
+    font-size : 1rem;
+    font-style : italic;
+
+
+}
+
+/* .card-yesmine .overlay-content-yesmine p {
+    display : flex;
+    text-align : center;
+    font-family: Bodoni 72;
+    font-style: normal;
+    font-weight: normal;
+    font-size : 1rem;
+
+    letter-spacing : 1px;
+    line-height : 1.2rem;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-stivie{
+    position: absolute;
+    width: 11rem;
+    height: 12rem;
+    margin-left: 10rem;
+    margin-top: 21rem;
+    overflow : hidden;
+    background-color : #C2CAE8;
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.card-stivie .main-content-stivie{
+    width: 12rem;
+    height: 12rem;
+    transition : 0.5s;
+    border-radius: 15px;
+    /* overflow : hidden */
+}
+.card-stivie .main-content-stivie img{
+    position : absolute;
+    width: 10rem;
+    height: 12rem;
+    left: 0.4rem;
+    top: 0.2rem;
+    
+    
+    
+}
+.card-stivie .overlay-content-stivie{
+    width : 100%;
+    height : 100%;
+    background-color: #45F0DF;
+    color: #000000;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    overflow : hidden;
+    position : absolute;
+    transition : 0.5s;
+    z-index : 1;
+    top: 0%;
+    left : 100%;
+    opacity : 0;
+    border-radius: 15px;
+}
+.card-stivie:hover .overlay-content-stivie, .card:hover .main-content-stivie{
+    /* left : 0; */
+    transform : translateX(-100%);
+    opacity : 1;
+}
+
+.card-stivie .overlay-content-stivie span {
+    top : 0px;
+    font-family: 'bodoni_72book';
+    text-align: justify;
+    font-weight: bold;
+    display : flex;
+    letter-spacing : normal;
+    font-size : 1rem;
+    font-style : italic;
+
+
+}
+
+/* .card-stivie .overlay-content-stivie p {
+    display : flex;
+    text-align : center;
+    font-family: Bodoni 72;
+    font-style: normal;
+    font-weight: normal;
+    font-size : 1rem;
+
+    letter-spacing : 1px;
+    line-height : 1.2rem;
+} */
+

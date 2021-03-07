@@ -1,0 +1,274 @@
+@font-face {
+    font-family: 'bodoni_72book';
+    src: url('font/bodonisvtytwoitctt-book-01-webfont.woff2') format('woff2'),
+         url('font/bodonisvtytwoitctt-book-01-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bodoni_72bold';
+    src: url('font/bodonisvtytwoitctt-bold-03-webfont.woff2') format('woff2'),
+         url('font/bodonisvtytwoitctt-bold-03-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {
+    padding: 0;
+    margin: 0;
+  }
+header{
+    position: absolute;
+    font-family: 'bodoni_72book';
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 70px;
+    color: white;
+    box-shadow: 0 8px 6px -6px black;
+    box-sizing:border-box ;
+  }
+  nav h1{
+    font-size: 2em;
+  }
+nav ul{
+    display: flex;
+  }
+  ul{
+    list-style: none;
+  }
+  li:nth-child(1){
+    padding-right: 10px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+body{
+    background-color : #111D4A;
+    box-sizing:border-box ;
+    align-items : center;
+    
+}
+
+.card-nathan{
+    width : 405px;
+    height : 400px;
+    position: absolute;
+    left: 1280px;
+    top: 285px;
+    overflow : hidden;
+    background-color : #C2CAE8;
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.card-nathan .main-content-nathan{
+    width: 405px;
+    height: 400px;
+    transition : 0.5s;
+    border-radius: 15px;
+    /* overflow : hidden */
+}
+.card-nathan .main-content-nathan img{
+    position : absolute;
+    width: 270px;
+    height: 350px;
+    left: 60px;
+    top: 30px;
+    
+    
+    
+}
+.card-nathan .overlay-content-nathan{
+    width : 100%;
+    height : 100%;
+    background-color: #45F0DF;
+    color: #000000;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    overflow : hidden;
+    position : absolute;
+    transition : 0.5s;
+    z-index : 1;
+    top: 0%;
+    left : 100%;
+    opacity : 0;
+    border-radius: 15px;
+}
+.card-nathan:hover .overlay-content-nathan, .card:hover .main-content-nathan{
+    /* left : 0; */
+    transform : translateX(-100%);
+    opacity : 1;
+}
+
+.card-nathan .overlay-content-nathan span {
+    top : 0px;
+    font-family: 'bodoni_72book';
+    text-align: justify;
+    font-weight: bold;
+    display : flex;
+    letter-spacing : normal;
+    font-size : 1rem;
+    font-style : italic;
+
+
+}
+
+/* .card-nathan .overlay-content-nathan p {
+    display : flex;
+    text-align : center;
+    font-family: Bodoni 72;
+    font-style: normal;
+    font-weight: normal;
+    font-size : 1rem;
+
+    letter-spacing : 1px;
+    line-height : 1.2rem;
+} */
+
+
+h2{
+    position: absolute;
+    width: 400px;
+    height: 43px;
+    left: 690px;
+    top: 168px;
+    
+    font-family: 'bodoni_72book';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    
+    color: #45F0DF;
+    
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nathan{
+    position: absolute;
+    width: 203px;
+    height: 57px;
+    left: 1040px;
+    top: 255px;
+    
+    font-family: 'bodoni_72book';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 57px;
+    
+    color: #8789C0;
+    
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.puissance{
+    position: absolute;
+    width: 300px;
+    height: 57px;
+    left: 530px;
+    top: 255px;
+    
+    font-family: 'bodoni_72book';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 57px;
+    
+    color: #8789C0;
+    
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.puissanceimg{
+
+    position: absolute;
+    width: 405px;
+    height: 400px;
+    left: 85px;
+    top: 300px;
+    
+}
+p{
+    position: absolute;
+    width: 550px;
+    height: 188px;
+    left: 590px;
+    top: 400px;
+    
+    font-family: 'bodoni_72book';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    
+    color: #C2CAE8;
+    
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.play1{
+    position: absolute;
+    top: 625px;
+    left: 530px;
+    width: 75px;
+    height: 25px;
+    background-color: #45F0DF;
+    border-radius : 15px;
+    color : #8789C0;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'bodoni_72book';
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin : 4px 2px;
+    /* text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25); */
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    transition-duration: 0.4s;
+
+}
+.play1:hover {
+    background-color: #8789C0; 
+    color: #111D4A;
+}
+
+
+.play2{
+    position: absolute;
+    top: 625px;
+    left: 1130px;
+    width: 75px;
+    height: 25px;
+    background-color: #45F0DF;
+    border-radius : 15px;
+    color : #8789C0;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'bodoni_72book';
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin : 4px 2px;
+    /* text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25); */
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.play2 :hover .overlay-content-nathan, .card:hover .main-content-nathan{
+    /* left : 0; */
+    transform : translateX(-100%);
+    opacity : 1;
+}
+
+span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
