@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header{
+  font-family: 'bodoni_72book';
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 70px;
+  color: white;
+  box-shadow: 0 8px 6px -6px black;
+  box-sizing:border-box ;
+}
+nav h1{
+  font-size: 2em;
+}
+nav ul{
+  display: flex;
+}
+ul{
+  list-style: none;
+}
+li:nth-child(1){
+  padding-right: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+table{
+  border-collapse: collapse;
+  margin: 15px auto ;
+  padding: 5px, 5px, 5px, 5px;
+}
+
+td{
+  border: 1px solid grey;
+  width: 27px; 
+  height: 27px; 
+  background-color: #282828;
+}
+
+tr{
+  border: 1px solid grey;
+  width: 27px; 
+  height: 27px;
+  background-color: #282828;
+}
+
+body{
+  background-color: #222;
+}
+
+#back1{  
+  background-color: #6d071a;
+  border-radius: 5px;
+  width: 1024px;
+  padding: 10px 0px 5px 0px  ;
+  margin: auto;
+  box-shadow: 0px 0px 0px 5px #6d071a80;
+}
+
+.btn{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+}
+
+.active{
+  border: solid black;
+  outline: none;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+}
+
+.clr{
+  background-color: #696969;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 2px black;
+}
+
+#toolbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#btpinceau img{
+  width: 50px;
+}
+
+#btpipette img{
+  width: 50px;
+}
+
+#btgomme img{
+  width: 50px;
+}
+
+#btrand img{
+  width: 50px;
+}
+
+#color{
+  width: 60px;
+  height: 60px;
+  border: none;              
+  outline: none; 
+  background-color: transparent;
+}
