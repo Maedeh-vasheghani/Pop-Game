@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'bodoni_72book';
+  src: url('font/bodonisvtytwoitctt-book-01-webfont.woff2') format('woff2'),
+       url('font/bodonisvtytwoitctt-book-01-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  background: #111D4A;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 70px;
+    color: #45F0DF;
+    box-shadow: 0 8px 6px -6px black;
+    font-family: 'bodoni_72book';
+  }
+  
+  nav ul{
+    display: flex;
+  }
+  ul{
+    list-style: none;
+  }
+  li:nth-child(1){
+    padding-right: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  span a{
+    text-decoration: none;
+    color:#8789C0;
+  }
+
+
+.regles {
+    margin : 0;
+    padding : .3rem;
+    font-family: 'bodoni_72book';
+    font : 1rem ;
+}
+
+.regles > h1,
+.regles-jeu {
+    color: #45F0DF;
+    margin: 3rem;
+    padding: 3rem;
+    font-size : 2rem;
+}
+
+.regles-jeu  > h2,
+.regles-jeu  > p {
+    margin: .2rem;
+    font-size: 1.5rem;
+    color : #C2CAE8;
+    width: 70%;
+    text-align: justify;
+}
+
+.regles-jeu  > h2{
+    color: #8789C0;
+    font-size : 3rem
+}
