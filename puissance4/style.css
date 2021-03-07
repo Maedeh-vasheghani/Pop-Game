@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'bodoni_72book';
+    src: url('font/bodonisvtytwoitctt-book-01-webfont.woff2') format('woff2'),
+         url('font/bodonisvtytwoitctt-book-01-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bodoni_72bold';
+    src: url('font/bodonisvtytwoitctt-bold-03-webfont.woff2') format('woff2'),
+         url('font/bodonisvtytwoitctt-bold-03-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+header{
+    font-family: 'bodoni_72book';
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 70px;
+    color: white;
+    box-shadow: 0 8px 6px -6px black;
+    
+  }
+nav h1{
+    font-size: 2em;
+}
+  
+h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    font-weight:10px ;
+    top: 0rem;
+    left:37%;
+    font-family: 'bodoni_72bold';
+    color:#45F0DF;
+}
+nav ul{
+    display: flex;
+  }
+  ul{
+    list-style: none;
+  }
+  li:nth-child(1){
+    padding-right: 10px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+body{
+    background-color: #111D4A;
+    
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+    
+}
+
+h3{
+    text-align: center;
+    color:#8789C0 ;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    font-weight:10px ;
+    top:8rem ; 
+    left: 32%;
+    font-family: 'bodoni_72book';
+}
+
+.grid{
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   flex-wrap: wrap;
+   height: 600px; 
+   width: 700px;
+   top:20rem ; 
+   left: 29%;
+   background-color:#C2CAE8 ;
+   border-radius: 10px ;
+   box-shadow: black;
+   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.grid div{
+    height: 100px;
+    width: 100px;
+    top:3rem ; 
+    left: 50%;
+}
+
+.player-one {
+    background-color:#111D4A;
+    border-radius: 100px;
+}
+
+.player-two {
+    background-color:#45F0DF;
+    border-radius: 100px;
+}
+ 
+button{
+    position: absolute;
+    top:50rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding: 0.3rem;
+    border: 1px solid black;
+    background: #45F0DF;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .5s;
+    font-family: 'bodoni_72book';
+    cursor: pointer;
+    transition-duration: 0.4s;
+    text-decoration: none ;
+    }
+.button1:hover {
+    background-color: #8789C0; 
+    color: #111D4A;
+}
+
+#result{
+    text-align: center;
+    color:#8789C0 ;
+    margin-left: auto;
+    margin-right: auto;
+    top:12rem ; 
+    left: 38%;
+}
+

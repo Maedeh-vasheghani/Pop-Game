@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Puissance 4</title>
+        <link href="https://fr.allfont.net/allfont.css?fonts=bodoni" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="style.css"></link>
+        <script src="app.js" ></script> 
+        <link rel='shortcut icon' href='../img/joueuur.png'>
+        <script>
+            function refreshPage(){
+            window.location.reload();
+            }
+            </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+              <a href="../index.html"><img src='../img/logo2.png' height="100em"></a>
+            </nav>
+            <nav>
+              <ul>
+                <li><a href="../Aide.html">Aide</a></li>
+                <li><a href="../Apropos.html">A propos</a></li>
+              </ul>
+            </nav>
+          </header>
+        <h2>Puissance 4</h2>
+        <h3>C'est au tour Du joueur: numéro <span id="current-player"></span></h3>
+        <h3 id="result"></h3>
+        <h3 id="score"></h3>
+          <!-- grid utilisé pour créer le puissance 4 -->
+        <div class=grid>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <!-- grid avec la class taken servant de "socle" pour que un cercle puisse se poser (grossierement)
+             donc a chaque fois que un joueur va jouer la grid sur laquelle il a cliqué va prendre la classe taken pour servir de socle a son tour-->
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+        </div>
+        <button type="submit" class="button1"  onClick="refreshPage()">Reset</button>
+    </body>
+</html>
